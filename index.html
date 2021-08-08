@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Addition Quiz | Harshree Development</title>
+    <!-- navbar css -->
+    <link rel="stylesheet" href="navbar.css">
+    <!-- this page css -->
+    <link rel="stylesheet" href="caller.css">
+    <!-- external link - extra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DN5TCP214"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8DN5TCP214');
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logoText"><a href="https://harsh-jagtap.github.io/Home-Page/">Harshree Development</a> </div>
+        <div id="category" class="resp">
+            <ul class="ul">
+                <li class="navi"><a href="https://harsh-jagtap.github.io/Home-Page/">Home</a></li>
+                <li class="navi"><a href="https://harsh-jagtap.github.io/My-Project/">My Project</a></li>
+                <li class="navi"><a href="#">Contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="contBox">
+        <div class="font-XLarge">EveryCaller</div>
+        <div class="font-Large">Now available for Indian Numbers only.</div>
+        <hr>
+        <div>
+            <form class="form">
+                <label for="number" class="font-Mid ">Enter your number </label>
+                <input class="input" id="number" type="tel" minlength="10" maxlength="10" placeholder="Enter number">
+                <button id="submit" class="button">Submit</button>
+            </form>
+        </div>
+        <hr id="hr2" class="hr2">
+        <div id="info" class="tip font-Mid">
+            <!-- info will be diplayed -->
+        </div>
+        <div id="tip" class="tip font-Mid">
+            <!-- tips will be diplayed -->
+        </div>
+    </section>
+</body>
+<script src="caller.js"></script>

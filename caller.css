@@ -1,0 +1,113 @@
+/* common */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.font-XLarge {
+    font-size: 40px;
+}
+
+.font-Large {
+    font-size: 30px;
+}
+
+.font-Mid {
+    font-size: 20px;
+}
+
+.font-Small {
+    font-size: 18px;
+}
+
+.input {
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.button {
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.wrong {
+    margin: 10px;
+    box-shadow: 0px 0px 20px red;
+}
+
+
+/* body */
+
+body {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background-size: 500%;
+    animation: rotate 5s infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+/* Main */
+
+.contBox {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hr2 {
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .input {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+    }
+    .form {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contBox {
+        width: 80%;
+    }
+}
